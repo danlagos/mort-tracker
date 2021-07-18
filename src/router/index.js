@@ -9,18 +9,23 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Dashboard",
+    path: "/login",
+    name: "login",
+    component: () => import("./views/Login.vue"),
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
     component: Dashboard,
   },
   {
-    path: "/TodoList",
-    name: "TodoList",
+    path: "/todoList",
+    name: "todoList",
     component: TodoList,
   },
   {
-    path: "/ContactManager",
-    name: "ContactManager",
+    path: "/contactManager",
+    name: "contactManager",
     component: ContactManager,
   },
   {
