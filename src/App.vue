@@ -2,7 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link> |
-      <router-link :to="{ name: 'TodoList' }">To Do List</router-link>
+      <router-link :to="{ name: 'TodoList' }">To Do List</router-link> |
+      <router-link :to="{ name: 'ContactManager' }"
+        >Contact Manager</router-link
+      >
     </div>
     <router-view />
   </div>
