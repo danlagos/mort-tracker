@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import TodoList from "../views/TodoList.vue";
 import ContactManager from "../views/ContactManager.vue";
+import NotFoundComponent from "../views/404Error.vue";
 
 Vue.use(VueRouter);
 
@@ -22,9 +23,14 @@ const routes = [
     name: "ContactManager",
     component: ContactManager,
   },
+  {
+    path: "*",
+    component: NotFoundComponent,
+  },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
