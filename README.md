@@ -8,7 +8,7 @@ Business problem I am trying to solve:  I am tired of the repetitive tasks I d
 
 Solution:  I will build a full-stack web app using Vue.JS, vue-router, and vuex to track, and report our business tasks.  We are a mortgage company.
 
-Features:
+Features: This list will grow as I create my app
 
 contact manager
 
