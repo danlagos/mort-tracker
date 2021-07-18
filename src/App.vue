@@ -1,37 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
-      |
-      <router-link :to="{ name: 'ContactManager' }"
-        >Contact Manager</router-link
-      >
-      |
-      <router-link :to="{ name: 'TodoList' }">To Do List</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <Login />
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Login from "@/views/Login.vue";
+export default {
+  components: { Login },
+  name: "App",
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
