@@ -10,12 +10,12 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/login",
     name: "login",
     component: () => import("../views/Login.vue"),
   },
   {
-    path: "/home",
+    path: "/",
     name: "home",
     component: () => import("../views/Home.vue"),
   },
