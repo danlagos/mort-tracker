@@ -1,17 +1,25 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Dashboard from "../views/Dashboard.vue";
-import TodoList from "../views/TodoList.vue";
-import ContactManager from "../views/ContactManager.vue";
+
 import NotFoundComponent from "../views/404Error.vue";
+import ContactManager from "../views/ContactManager.vue";
+import Dashboard from "../views/Dashboard.vue";
+import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
+import TodoList from "../views/TodoList.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "login",
-    component: () => import("./views/Login.vue"),
+    component: Login,
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: Home,
   },
   {
     path: "/dashboard",
