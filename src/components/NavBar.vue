@@ -21,8 +21,9 @@
 <script>
 import { mapState } from "vuex";
 export default {
-  computed: mapState({
-    links: "links",
-  }),
+  computed: {
+    // in case you need a localComputed() {},
+    ...mapState(["links"]),
+  },
 };
 </script>
