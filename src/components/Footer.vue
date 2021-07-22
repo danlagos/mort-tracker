@@ -24,9 +24,7 @@
 <script>
 export default {
   data() {
-    return {
-      props: [links],
-    };
+    return {};
   },
 };
 </script>

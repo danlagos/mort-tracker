@@ -28,8 +28,6 @@
 
 <script>
 export default {
-  data: () => ({
-    showPassword: false,
-  }),
+  data: () => ({}),
 };
 </script>
