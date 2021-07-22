@@ -4,7 +4,26 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    links: [
+      {
+        label: "Home",
+        url: "/",
+      },
+      {
+        label: "Login",
+        url: "/login",
+      },
+      {
+        label: "Contacts",
+        url: "/contactManager",
+      },
+      {
+        label: "To Do",
+        url: "/todoList",
+      },
+    ],
+  },
   mutations: {},
   actions: {},
   modules: {},

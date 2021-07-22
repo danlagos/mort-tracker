@@ -10,3 +10,16 @@
     </v-app-bar>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    linkLabel() {
+      return this.$store.state.link.label;
+    },
+    linkUrl() {
+      return this.$store.state.link.url;
+    },
+  },
+};
+</script>
