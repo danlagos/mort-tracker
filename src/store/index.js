@@ -10,10 +10,7 @@ export default new Vuex.Store({
         label: "Home",
         url: "/",
       },
-      {
-        label: "Login",
-        url: "/login",
-      },
+
       {
         label: "Contacts",
         url: "/contactManager",
@@ -21,6 +18,10 @@ export default new Vuex.Store({
       {
         label: "To Do",
         url: "/todoList",
+      },
+      {
+        label: "Login",
+        url: "/login",
       },
     ],
   },
