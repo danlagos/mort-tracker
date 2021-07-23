@@ -1,37 +1,61 @@
 <template>
-  <div>
-    <ul>
-      <li>FILE</li>
-      <li>CLIENT NAME</li>
-      <li>PRE APP</li>
-      <li>DATE</li>
-      <li>REFERRAL</li>
-      <li>PHONE NUMBER</li>
-      <li>EMAIL</li>
-      <li>TYPE OF LOAN</li>
-      <li>NOTES</li>
-    </ul>
-    <ul>
-      <li>DL</li>
-      <li>David Supina</li>
-      <li>APP</li>
-      <li>7/15</li>
-      <li>PCR</li>
-      <li>619-948-2070</li>
-      <li>davidsupina@icloud.com</li>
-      <li>REFI CONV</li>
-      <li>
-        He inherited the home from husband, other people $15,000 to pay off the
-        credit cards debts, Owed the home since 1993 2 years, its in his trust 2
-        months behind on payments. $1300 home is worth 1million and home
-        renovations are doing final touches. Permits have been paid, currently
-        unemployed had a rent for 6 months. 30 year Mortgage VA behind payments
-        $50,000 credit score 705 Tell him that we are unable to move forward
-        until you have income.
-      </li>
-    </ul>
-  </div>
+  <v-card>
+    <v-card-title>
+      Lead Tracker
+      <v-spacer></v-spacer>
+      <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        single-line
+        hide-details
+      ></v-text-field>
+    </v-card-title>
+    <v-data-table
+      :headers="headers"
+      :items="contacts"
+      :search="search"
+    ></v-data-table>
+  </v-card>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      headers: [
+        {
+          text: " Owner",
+          align: "start",
+          sortable: false,
+          value: "owner",
+        },
+        { text: "Client", value: "client" },
+        { text: "Pre App", value: "preApp" },
+        { text: "Date", value: "date" },
+        { text: "Referal Source", value: "referalSource" },
+        { text: "Phone Number", value: "phoneNumber" },
+        { text: "Email", value: "email" },
+        { text: "Type of Loan", value: "tpyeOfLoan" },
+        { text: "Notes", value: "notes" },
+      ],
+      contacts: [
+        {
+          owner: "DL",
+          client: "David Supina",
+          preApp: "App",
+          date: "7/11",
+          referalSource: "PCR",
+          phoneNumber: "619-948-2070",
+          email: "davidsupina@icloud.com",
+          tpyeOfLoan: "Conv Refi",
+          notes: "He inherited the home from husband",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style scoped>
 ul {
