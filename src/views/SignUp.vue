@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>To do List</h1>
+        <h1>Sign up page</h1>
       </v-col>
     </v-row>
   </v-container>

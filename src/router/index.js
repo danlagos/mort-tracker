@@ -35,6 +35,12 @@ const routes = [
     component: ContactManager,
   },
   {
+    path: "/signup",
+    name: "signup",
+    component: () => import("../views/SignUp.vue"),
+  },
+
+  {
     path: "*",
     component: () => import("../views/404Error.vue"),
   },

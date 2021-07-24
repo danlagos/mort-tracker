@@ -20,6 +20,10 @@ export default new Vuex.Store({
         url: "/todoList",
       },
       {
+        label: "Sign Up",
+        url: "/signup",
+      },
+      {
         label: "Login",
         url: "/login",
       },

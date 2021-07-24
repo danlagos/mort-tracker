@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <h1>Contact Manager</h1>
-    <Contact />
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>Contact Manager</h1>
+        <Contact />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <LoginCard />
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <LoginCard />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
