@@ -4,7 +4,7 @@
     <v-content>
       <router-view></router-view>
     </v-content>
-    <Footer :links="links" />
+    <Footer />
   </v-app>
 </template>
 
