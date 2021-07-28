@@ -9,9 +9,7 @@
           : 'mdi-checkbox-blank-circle-outline'
       "
       @click:prepend="itemComplete = !itemComplete"
-    >
-      > ></v-text-field
-    >
+    ></v-text-field>
   </div>
 </template>
 
