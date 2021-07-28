@@ -14,7 +14,9 @@
           {{ link.label }}
         </v-btn>
         <v-col class="primary lighten-1 py-4 text-center white--text" cols="12">
-          {{ new Date().getFullYear() }} — <strong>Mortgage Tracker</strong>
+          {{ new Date().getFullYear() }} — <strong>Mortgage Tracker </strong>
+          <v-icon color="white" x-small>mdi-zodiac-scorpio</v-icon>
+          <v-icon color="white" x-small>mdi-zodiac-taurus</v-icon>
         </v-col>
       </v-row>
     </v-footer>
